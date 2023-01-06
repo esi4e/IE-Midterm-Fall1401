@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9831045 Midterm</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="info" id="main">
+        <div id="user-image-div"></div>
+
+        <span id="user-info">
+          <div id="info-name"></div>
+
+          <div id="info-url"></div>
+
+          <div id="info-location"></div>
+
+          <div id="info-bio"></div>
+          <div id="info-lang"></div>
+        </span>
+      </div>
+      <div class="form-div">
+        <form id="form" onsubmit="getUser(event)">
+          <div>
+            <input class="form-text" type="text" id="gitname" name="gitname" />
+          </div>
+          <div>
+            <input
+              class="button"
+              id="submit-btn"
+              type="submit"
+              value="Submit"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="error-div-contain"></div>
+  </body>
+</html>

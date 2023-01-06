@@ -1,0 +1,177 @@
+body {
+  /* font family and font size and weight of everything in the body */
+  font-family: "Segoe Print";
+  font-size: 0.6em;
+  font-weight: 800;
+  /* background image to be shown*/
+  background-image: url("github2.jpg");
+  /* show the image once and dont repeat it */
+  background-repeat: no-repeat;
+  /* sets the background to cover the whole page */
+  background-size: cover;
+  /* position the background to the center of the page the image
+   resolution is pretty high so the difference is hard to observe*/
+  background-position: center;
+  /* fix the background and do not enable scrolling */
+  background-attachment: fixed;
+  /* elements la out its content according to the grid model */
+  display: grid;
+  /* the items are flushed to the center */
+  justify-content: center;
+  /* items start from the center of the page and go to both 
+    directions */
+  align-items: center;
+}
+
+/* setting the font size for the elements of the html 
+  most of them will be overwritten, the purpose is to control 
+  the size of the whole page in default zoom */
+p,
+button,
+form,
+input {
+  font-size: 2em;
+}
+
+.container {
+  /* setting the width of the container class, used relative measures
+   to make it look good on different displays */
+  width: 50em;
+  /* have some margin from the top in order not to stick to the top of the
+    page */
+  margin-top: 7%;
+  /* elements la out its content according to the grid model */
+  display: grid;
+  /* 10 pixel padding in order for the container borders to have some distance from
+    the content */
+  padding: 10px;
+  /* in order to have rounded edges */
+  border-radius: 15px;
+
+  padding-top: 30px;
+  grid-template-columns: auto auto;
+  padding-bottom: 70px;
+  padding-left: 5em;
+  padding-right: 5em;
+  border-width: 0.15em;
+}
+
+/* the info class which is the container in which all the 
+  user information are shown */
+.info {
+  width: 30em;
+  /* padding to have distance with the border */
+  padding: 10px;
+  /* a solid black border */
+  border: solid black;
+  /* in order to have a smooth border accross the container*/
+  border-width: 0.1em;
+  border-radius: 10px;
+  /* setting the background color with transparency */
+  background-color: rgba(136, 172, 192, 0.701);
+}
+.form-div {
+  /* width and height will fit the contents inside it */
+  width: fit-content;
+  height: fit-content;
+  /* 10 and 8 pixel margin from right and left */
+  margin-right: 10px;
+  margin-left: 8px;
+  /* solid border with setting the color and width of the border */
+  border: solid;
+  border-width: 0.1em;
+  border-color: black;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: inherit;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(136, 172, 192, 0.701);
+}
+
+.button {
+  /* font size of the button class which is the submit button*/
+  font-size: 0.5em;
+  width: 6em;
+  border: solid;
+  /* setting border color */
+  border-color: rgb(44, 70, 71);
+  /* setting border width and radius in order to make it look smooth */
+  border-width: 0.1em;
+  border-radius: 2px;
+  /* inherit the background color from the parent */
+  background-color: inherit;
+}
+
+/* setting the font size and width of the textbox which
+ user writes the username*/
+.form-text {
+  font-size: 0.5em;
+  width: 7em;
+}
+
+/* setting backgound and text color when hovering mouse to a button */
+.button:hover {
+  background-color: rgba(100, 100, 100, 0.463);
+  color: #ffffff;
+}
+
+/*
+sets the background color and font color for the selected text
+*/
+::selection {
+  background-color: rgb(255, 153, 0);
+  color: #ffffff;
+}
+
+#user-image-div {
+  /*sets the user image div to fit the content inside it */
+  width: fit-content;
+  height: fit-content;
+  /* puts a margin to right in order to not hit the text */
+  margin-right: 0.2em;
+  /* float it to left so it does not take the whole line */
+  float: left;
+}
+
+#error-div-contain {
+  /* setting background color */
+  background-color: rgba(186, 64, 64, 0.632);
+  /* border to be a solid line */
+  /* border: solid; */
+  /* color of the text to be white */
+  color: #ffffff;
+  /* aligning the text to the center */
+  text-align: center;
+  /* border width and radius will make the border to be smooth */
+  border-width: 0.15em;
+  border-radius: 10px;
+  /* some padding so the text has some distance from the border */
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  /* setting the font size and font family of the text */
+  font-size: 0.7em;
+  font-family: "Lucida Sans";
+}
+
+#info-name,
+#info-location {
+  font-family: "Lucida Sans";
+  text-align: center;
+  /* top padding will make a distance with the top line so it looks better */
+  padding-top: 0.3em;
+  /* setting the font size */
+  font-size: 1.25em;
+}
+
+#info-location {
+  /* more padding so the bio and favorite language appear after the avatar*/
+  padding-bottom: 4em;
+}
+/* same as the info name and info location but with a smaller font size */
+#info-url {
+  font-family: "Lucida Sans";
+  font-size: 0.8em;
+  text-align: center;
+  padding-top: 0.3em;
+}
